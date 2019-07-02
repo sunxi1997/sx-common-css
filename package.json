@@ -1,0 +1,12 @@
+{
+  "name": "sx-common-css",
+  "version": "1.0.3",
+  "description": "",
+  "main": "css/index.css",
+  "miniprogram": "wxss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
