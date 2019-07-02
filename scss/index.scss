@@ -40,6 +40,9 @@ body{
     .flex-x-end {
         justify-content: flex-end}
 
+    .flex-y-start{
+        align-items: flex-start}
+
     .flex-y-center {
         align-items: center}
 
@@ -298,4 +301,6 @@ body{
     .shadow{
         box-shadow: 0 0 2px 1px rgba(0,0,0,0.05)}
 
+    .shadow-deep{
+        box-shadow: 0 0 6px 1px rgba(0,0,0,0.1)}
 }
