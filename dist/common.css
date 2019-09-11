@@ -642,5 +642,8 @@ body .line-h3 {
 body .bold {
   font-weight: bold;
 }
+body .clickable:active {
+  opacity: 0.8;
+}
 
 /*# sourceMappingURL=common.css.map */
