@@ -1,0 +1,289 @@
+/*****尺寸*****/
+
+.h-100{
+  height:100%}
+
+.w-100{
+  width:100%}
+
+
+
+/*****边距*****/
+$extraSmall: 4px;
+$small: 8px;
+$base: 14px;
+$medium: 20px;
+$large: 30px;
+$extraLarge: 50px;
+
+.m{
+  &-t--1{
+    margin-top: -1px;
+  }
+
+  &-extra-small-0{
+    margin: $extraSmall 0;
+  }
+  &-small-0{
+    margin: $small 0;
+  }
+  &-base-0{
+    margin: $base 0;
+  }
+  &-medium-0{
+    margin: $medium 0;
+  }
+  &-large-0{
+    margin: $large 0;
+  }
+  &-extra-large-0{
+    margin: $extraLarge 0;
+  }
+
+  &-t{
+    &-extra-small{
+      margin-top:$extraSmall}
+    &-small{
+      margin-top:$small}
+    &-base{
+      margin-top:$base}
+    &-medium{
+      margin-top:$medium}
+    &-large{
+      margin-top:$large}
+    &-extra-large{
+      margin-top:$extraLarge}
+  }
+  &-l{
+    &-extra-small{
+      margin-left:$extraSmall}
+    &-small{
+      margin-left:$small}
+    &-base{
+      margin-left:$base}
+    &-medium{
+      margin-left:$medium}
+    &-large{
+      margin-left:$large}
+    &-extra-large{
+      margin-left:$extraLarge}
+  }
+  &-r{
+    &-extra-small{
+      margin-right:$extraSmall}
+    &-small{
+      margin-right:$small}
+    &-base{
+      margin-right:$base}
+    &-medium{
+      margin-right:$medium}
+    &-large{
+      margin-right:$large}
+    &-extra-large{
+      margin-right:$extraLarge}
+  }
+  &-b{
+    &-extra-small{
+      margin-bottom:$extraSmall}
+    &-small{
+      margin-bottom:$small}
+    &-base{
+      margin-bottom:$base}
+    &-medium{
+      margin-bottom:$medium}
+    &-large{
+      margin-bottom:$large}
+    &-extra-large{
+      margin-bottom:$extraLarge}
+  }
+}
+
+.p{
+  &-extra-small{
+    padding: $extraSmall;
+  }
+  &-small{
+    padding: $small;
+  }
+  &-base{
+    padding: $base;
+  }
+  &-medium{
+    padding: $medium;
+  }
+  &-large{
+    padding: $large;
+  }
+  &-extra-large{
+    padding: $extraLarge;
+  }
+
+  &-extra-small-0{
+    padding: $extraSmall 0;
+  }
+  &-small-0{
+    padding: $small 0;
+  }
+  &-base-0{
+    padding: $base 0;
+  }
+  &-medium-0{
+    padding: $medium 0;
+  }
+  &-large-0{
+    padding: $large 0;
+  }
+  &-extra-large-0{
+    padding: $extraLarge 0;
+  }
+
+  &-0-extra-small{
+    padding: 0 $extraSmall;
+  }
+  &-0-small{
+    padding: 0 $small;
+  }
+  &-0-base{
+    padding: 0 $base;
+  }
+  &-0-medium{
+    padding: 0 $medium;
+  }
+  &-0-large{
+    padding: 0 $large;
+  }
+  &-0-extra-large{
+    padding: 0 $extraLarge;
+  }
+  &-t{
+    &-extra-small{
+      padding-top:$extraSmall}
+    &-small{
+      padding-top:$small}
+    &-base{
+      padding-top:$base}
+    &-medium{
+      padding-top:$medium}
+    &-large{
+      padding-top:$large}
+    &-extra-large{
+      padding-top:$extraLarge}
+  }
+  &-l{
+    &-extra-small{
+      padding-left:$extraSmall}
+    &-small{
+      padding-left:$small}
+    &-base{
+      padding-left:$base}
+    &-medium{
+      padding-left:$medium}
+    &-large{
+      padding-left:$large}
+    &-extra-large{
+      padding-left:$extraLarge}
+  }
+  &-r{
+    &-extra-small{
+      padding-right:$extraSmall}
+    &-small{
+      padding-right:$small}
+    &-base{
+      padding-right:$base}
+    &-medium{
+      padding-right:$medium}
+    &-large{
+      padding-right:$large}
+    &-extra-large{
+      padding-right:$extraLarge}
+  }
+  &-b{
+    &-extra-small{
+      padding-bottom:$extraSmall}
+    &-small{
+      padding-bottom:$small}
+    &-base{
+      padding-bottom:$base}
+    &-medium{
+      padding-bottom:$medium}
+    &-large{
+      padding-bottom:$large}
+    &-extra-large{
+      padding-bottom:$extraLarge}
+  }
+}
+
+.m-0 {
+  margin: 0 !important}
+
+.m-b-0{
+  margin-bottom: 0!important;
+}
+
+.m-0-auto {
+  margin: 0 auto}
+
+.p-0 {
+  padding: 0 !important}
+
+.p-top-1 {
+  padding-top: 1px}
+
+.m-top0{
+  margin-top:0!important}
+
+/*****定位*****/
+
+.absolute {
+  position: absolute}
+
+.fixed {
+  position: fixed}
+
+.relative {
+  position: relative}
+
+.top-0 {
+  top: 0}
+
+.bottom-0 {
+  bottom: 0}
+
+.left-0 {
+  left: 0}
+
+.right-0 {
+  right: 0}
+
+.pos-center {
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0)}
+
+.border-box{
+  box-sizing: border-box}
+
+.over-scroll {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch}
+
+.over-hidden{
+  overflow: hidden}
+
+.over-visible{
+  overflow: visible}
+
+.radius{
+  border-radius: 5px}
+
+.radius-16 {
+  border-radius: 16px}
+
+.circle{
+  border-radius:50%}
+
+.shadow{
+  box-shadow: 0 0 2px 1px rgba(0,0,0,0.05)}
+
+.shadow-deep{
+  box-shadow: 0 0 6px 1px rgba(0,0,0,0.1)}

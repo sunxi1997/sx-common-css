@@ -1,0 +1,30 @@
+/**
+ * 通用样式
+ */
+@import "../variables";
+
+.pos-x-center{
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+}
+
+.pos-y-center {
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+}
+
+.color-p{
+  color: $primaryColor
+}
+
+.color-info{
+  color: #909399;
+}
+
+.line-h1{
+  line-height: 100%;
+}
+
+.t-line-through{
+  text-decoration: line-through;
+}

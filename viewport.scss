@@ -1,0 +1,21 @@
+
+$screens:     401px   428px   481px   569px   641px !default;
+$font-sizes:  12.5px  13.5px  15px    18px    20px  !default;
+
+$default-font-size: 10px !default;
+
+html {
+  font-size: $default-font-size;
+}
+
+@each $screen in $screens {
+
+  $i: index($screens, $screen);
+  $font-size: nth($font-sizes, $i);
+
+  @media only screen and (min-width: $screen) {
+    html {
+      font-size: $font-size !important;
+    }
+  }
+}
