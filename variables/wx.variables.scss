@@ -1,0 +1,31 @@
+
+// 边距大小
+$extraSmall: 4px !default;
+$small: 8px !default;
+$base: 14px !default;
+$medium: 20px !default;
+$large: 30px !default;
+$extraLarge: 50px !default;
+
+// 圆角大小
+$radius: 5px !default;
+$extraRadius: 16px !default;
+
+// 阴影
+$shadow: 0 0 2px 1px rgba(0, 0, 0, 0.05) !default;
+$extraShadow: 0 0 6px 1px rgba(0, 0, 0, 0.1) !default;
+
+// 颜色
+$primary: #409EFF !default;
+$success: #67C23A !default;
+$danger: #F56C6C !default;
+$warning: #E6A23C !default;
+$info: #909399 !default;
+
+// 字体大小
+$fontExtraSmall: 12px !default;
+$fontSmall: 13px !default;
+$fontBase: 14px !default;
+$fontMedium: 18px !default;
+$fontLarge: 20px !default;
+$fontExtraLarge: 24px !default;

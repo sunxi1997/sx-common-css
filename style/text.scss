@@ -1,0 +1,98 @@
+
+@import "../variables/text.variables";
+
+// 字体大小
+$sizes:  $fontExtraSmall $fontSmall $fontBase $fontMedium $fontLarge $fontExtraLarge;
+$fontNames: 'extra-small' 'small' 'base' 'medium' 'large' 'extra-large';
+
+.f{
+  @each $name in $fontNames {
+    $i: index($fontNames, $name);
+    $size: nth($sizes, $i);
+    &-#{$name} {
+      font-size: $size;
+    }
+  }
+}
+
+// 字体颜色
+
+$colors: $primary $success $danger $warning $info;
+$colorNames: 'primary' 'success' 'danger' 'warning' 'info';
+
+.color{
+  @each $name in $colorNames {
+    $i: index($colorNames, $name);
+    $color: nth($colors, $i);
+    &-#{$name} {
+      color: $color;
+    }
+  }
+}
+
+// 对齐方式
+
+.t-left {
+  text-align: left;
+}
+
+.t-right {
+  text-align: right;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.t-justify {
+  text-align: justify;
+}
+
+// 溢出处理
+
+.t-ellipsis {
+  text-overflow-ellipsis: ellipsis;
+  white-space: nowrap;
+}
+
+.t-ellipsis-line2 {
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2
+}
+
+// 删除线
+.t-line-through {
+  text-decoration: line-through
+}
+
+// 行高
+
+.line-h1{
+  line-height: 100%;
+}
+
+.line-h1_4 {
+  line-height: 1.4em;
+}
+
+.line-h1_6 {
+  line-height: 1.6em;
+}
+
+.line-h2 {
+  line-height: 2
+}
+
+.line-h3 {
+  line-height: 3
+}
+
+// 字体
+
+.bold {
+  font-weight: bold
+}

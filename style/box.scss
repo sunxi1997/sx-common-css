@@ -1,0 +1,194 @@
+
+@import "../variables/box.variables";
+
+// 元素尺寸
+
+.w-100 {
+  width: 100%
+}
+
+.h-100 {
+  height: 100%
+}
+
+
+// 边距
+$names: 'extra-small' 'small' 'base' 'medium' 'large' 'extra-large';
+$values: $extraSmall $small $base $medium $large $extraLarge;
+
+@mixin box($property, $classNames, $values, $suffix: null) {
+  @each $name in $classNames {
+    $i: index($classNames, $name);
+    $val: nth($values, $i);
+    &-#{$name} {
+      #{$property}: $val $suffix;
+    }
+  }
+}
+
+@mixin direction($propertyName) {
+
+  $classNames: 't' 'b' 'l' 'r';
+  $propertyNames: 'top' 'bottom' 'left' 'right';
+
+
+  @each $name in $classNames {
+    $i: index($classNames, $name);
+    $val: nth($propertyNames, $i);
+
+    $pName: $propertyName + '-' + $val;
+
+    &-#{$name} {
+      @include box($pName, $names, $values);
+    }
+  }
+}
+
+@mixin direction-0($propertyName) {
+  $classNames: 't' 'b' 'l' 'r';
+  $propertyNames: 'top' 'bottom' 'left' 'right';
+  @each $name in $classNames {
+    $i: index($classNames, $name);
+    $val: nth($propertyNames, $i);
+
+    &-#{$name}-0 {
+      #{$propertyName}-#{$val}-0: 0 !important;
+    }
+  }
+}
+
+$arr: 'm' 'p';
+$array: 'margin' 'padding';
+
+@each $item in $arr {
+  $index: index($arr, $item);
+  $elem: nth($array, $index);
+
+  .#{$item} {
+
+    &-0 {
+      #{$elem}: 0 !important;
+    }
+
+    @include direction-0($elem);
+
+    @include direction($elem);
+
+    @include box($elem, $names, $values);
+
+    @include direction($elem);
+
+    @each $name in $names {
+      $i: index($names, $name);
+      $val: nth($values, $i);
+
+      @include box($elem, $name + '-0', ($val 0) null);
+      @include box($elem, '0-' + $name, ($val 0) null);
+    }
+  }
+}
+
+
+.m-t--1 {
+  margin-top: -1px;
+}
+
+.p-t-1 {
+  padding-top: 1px;
+}
+
+
+// 定位
+
+.absolute {
+  position: absolute
+}
+
+.fixed {
+  position: fixed
+}
+
+.relative {
+  position: relative
+}
+
+.top-0 {
+  top: 0
+}
+
+.bottom-0 {
+  bottom: 0
+}
+
+.left-0 {
+  left: 0
+}
+
+.right-0 {
+  right: 0
+}
+
+.pos-center {
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0)
+}
+
+.pos-x-center{
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+}
+
+.pos-y-center {
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+}
+
+// 盒模型
+
+.border-box {
+  box-sizing: border-box
+}
+
+.content-box {
+  box-sizing: content-box;
+}
+
+// 溢出处理
+
+.over-scroll {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch
+}
+
+.over-hidden {
+  overflow: hidden
+}
+
+.over-visible {
+  overflow: visible
+}
+
+// 圆角
+
+.radius {
+  border-radius: $radius
+}
+
+.extra-radius {
+  border-radius: $extraRadius
+}
+
+.radius-circle {
+  border-radius: 50%
+}
+
+// 阴影
+
+.shadow {
+  box-shadow: $shadow
+}
+
+.extra-shadow {
+  box-shadow: $extraShadow
+}
