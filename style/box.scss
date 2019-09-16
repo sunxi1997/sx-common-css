@@ -1,7 +1,9 @@
 
 @import "../variables/box.variables";
 
+// ---------------------------------
 // 元素尺寸
+// ---------------------------------
 
 .w-100 {
   width: 100%
@@ -11,8 +13,9 @@
   height: 100%
 }
 
-
+// ---------------------------------
 // 边距
+// ---------------------------------
 $names: 'extra-small' 'small' 'base' 'medium' 'large' 'extra-large';
 $values: $extraSmall $small $base $medium $large $extraLarge;
 
@@ -60,30 +63,36 @@ $values: $extraSmall $small $base $medium $large $extraLarge;
 $arr: 'm' 'p';
 $array: 'margin' 'padding';
 
+// m-    p-
 @each $item in $arr {
   $index: index($arr, $item);
   $elem: nth($array, $index);
 
   .#{$item} {
 
+    // m-0  p-0
     &-0 {
       #{$elem}: 0 !important;
     }
 
+    // m-(top,l,r,b)-0  p-(top,l,r,b)-0
     @include direction-0($elem);
 
+    // m-(top,l,r,b)-x  p-(top,l,r,b)-x
     @include direction($elem);
 
+    // m-x-x p-x-x
     @include box($elem, $names, $values);
-
-    @include direction($elem);
 
     @each $name in $names {
       $i: index($names, $name);
       $val: nth($values, $i);
 
+      // m-x-0  p-x-0
       @include box($elem, $name + '-0', ($val 0) null);
-      @include box($elem, '0-' + $name, ($val 0) null);
+
+      // m-0-x  p-0-x
+      @include box($elem, '0-' + $name, (0 $val) null);
     }
   }
 }
@@ -97,8 +106,9 @@ $array: 'margin' 'padding';
   padding-top: 1px;
 }
 
-
+// ---------------------------------
 // 定位
+// ---------------------------------
 
 .absolute {
   position: absolute
@@ -144,7 +154,9 @@ $array: 'margin' 'padding';
   transform: translate3d(0, -50%, 0);
 }
 
+// ---------------------------------
 // 盒模型
+// ---------------------------------
 
 .border-box {
   box-sizing: border-box
@@ -154,7 +166,9 @@ $array: 'margin' 'padding';
   box-sizing: content-box;
 }
 
+// ---------------------------------
 // 溢出处理
+// ---------------------------------
 
 .over-scroll {
   overflow: scroll;
@@ -169,7 +183,9 @@ $array: 'margin' 'padding';
   overflow: visible
 }
 
+// ---------------------------------
 // 圆角
+// ---------------------------------
 
 .radius {
   border-radius: $radius
@@ -183,7 +199,9 @@ $array: 'margin' 'padding';
   border-radius: 50%
 }
 
+// ---------------------------------
 // 阴影
+// ---------------------------------
 
 .shadow {
   box-shadow: $shadow
