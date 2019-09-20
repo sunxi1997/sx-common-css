@@ -51,8 +51,10 @@ $colorNames: 'primary' 'success' 'danger' 'warning' 'info';
 // 溢出处理
 
 .t-ellipsis {
-  text-overflow-ellipsis: ellipsis;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .t-ellipsis-line2 {

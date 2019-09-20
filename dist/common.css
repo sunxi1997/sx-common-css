@@ -466,8 +466,10 @@ body .t-justify {
   text-align: justify;
 }
 body .t-ellipsis {
-  text-overflow-ellipsis: ellipsis;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
 }
 body .t-ellipsis-line2 {
   display: -webkit-box;
