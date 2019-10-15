@@ -55,7 +55,7 @@ $values: $extraSmall $small $base $medium $large $extraLarge;
     $val: nth($propertyNames, $i);
 
     &-#{$name}-0 {
-      #{$propertyName}-#{$val}-0: 0 !important;
+      #{$propertyName}-#{$val}: 0 !important;
     }
   }
 }
