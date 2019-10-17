@@ -467,22 +467,22 @@
 }
 
 .f-extra-small {
-  font-size: 28rpx;
+  font-size: 24rpx;
 }
 .f-small {
-  font-size: 34rpx;
+  font-size: 28rpx;
 }
 .f-base {
-  font-size: 40rpx;
+  font-size: 32rpx;
 }
 .f-medium {
-  font-size: 46rpx;
+  font-size: 36rpx;
 }
 .f-large {
-  font-size: 52rpx;
+  font-size: 40rpx;
 }
 .f-extra-large {
-  font-size: 60rpx;
+  font-size: 44rpx;
 }
 
 .color-primary {
