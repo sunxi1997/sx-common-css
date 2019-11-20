@@ -29,6 +29,7 @@ $values: $extraSmall $small $base $medium $large $extraLarge;
   }
 }
 
+// xx-t-small... xx-t-b-small...
 @mixin direction($propertyName) {
 
   $classNames: 't' 'b' 'l' 'r';
@@ -75,12 +76,6 @@ $array: 'margin' 'padding';
       #{$elem}: 0 !important;
     }
 
-    // m-(top,l,r,b)-0  p-(top,l,r,b)-0
-    @include direction-0($elem);
-
-    // m-(top,l,r,b)-x  p-(top,l,r,b)-x
-    @include direction($elem);
-
     // m-x-x p-x-x
     @include box($elem, $names, $values);
 
@@ -94,6 +89,13 @@ $array: 'margin' 'padding';
       // m-0-x  p-0-x
       @include box($elem, '0-' + $name, (0 $val) null);
     }
+
+    // m-(top,l,r,b)-x  p-(top,l,r,b)-x
+    @include direction($elem);
+
+    // m-(top,l,r,b)-0  p-(top,l,r,b)-0
+    @include direction-0($elem);
+
   }
 }
 

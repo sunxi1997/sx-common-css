@@ -9,17 +9,59 @@
 .m-0 {
   margin: 0 !important;
 }
-.m-t-0 {
-  margin-top: 0 !important;
+.m-extra-small {
+  margin: 8rpx;
 }
-.m-b-0 {
-  margin-bottom: 0 !important;
+.m-small {
+  margin: 16rpx;
 }
-.m-l-0 {
-  margin-left: 0 !important;
+.m-base {
+  margin: 28rpx;
 }
-.m-r-0 {
-  margin-right: 0 !important;
+.m-medium {
+  margin: 40rpx;
+}
+.m-large {
+  margin: 60rpx;
+}
+.m-extra-large {
+  margin: 100rpx;
+}
+.m-extra-small-0 {
+  margin: 8rpx 0;
+}
+.m-0-extra-small {
+  margin: 0 8rpx;
+}
+.m-small-0 {
+  margin: 16rpx 0;
+}
+.m-0-small {
+  margin: 0 16rpx;
+}
+.m-base-0 {
+  margin: 28rpx 0;
+}
+.m-0-base {
+  margin: 0 28rpx;
+}
+.m-medium-0 {
+  margin: 40rpx 0;
+}
+.m-0-medium {
+  margin: 0 40rpx;
+}
+.m-large-0 {
+  margin: 60rpx 0;
+}
+.m-0-large {
+  margin: 0 60rpx;
+}
+.m-extra-large-0 {
+  margin: 100rpx 0;
+}
+.m-0-extra-large {
+  margin: 0 100rpx;
 }
 .m-t-extra-small {
   margin-top: 8rpx;
@@ -93,75 +135,75 @@
 .m-r-extra-large {
   margin-right: 100rpx;
 }
-.m-extra-small {
-  margin: 8rpx;
+.m-t-0 {
+  margin-top: 0 !important;
 }
-.m-small {
-  margin: 16rpx;
+.m-b-0 {
+  margin-bottom: 0 !important;
 }
-.m-base {
-  margin: 28rpx;
+.m-l-0 {
+  margin-left: 0 !important;
 }
-.m-medium {
-  margin: 40rpx;
-}
-.m-large {
-  margin: 60rpx;
-}
-.m-extra-large {
-  margin: 100rpx;
-}
-.m-extra-small-0 {
-  margin: 8rpx 0;
-}
-.m-0-extra-small {
-  margin: 0 8rpx;
-}
-.m-small-0 {
-  margin: 16rpx 0;
-}
-.m-0-small {
-  margin: 0 16rpx;
-}
-.m-base-0 {
-  margin: 28rpx 0;
-}
-.m-0-base {
-  margin: 0 28rpx;
-}
-.m-medium-0 {
-  margin: 40rpx 0;
-}
-.m-0-medium {
-  margin: 0 40rpx;
-}
-.m-large-0 {
-  margin: 60rpx 0;
-}
-.m-0-large {
-  margin: 0 60rpx;
-}
-.m-extra-large-0 {
-  margin: 100rpx 0;
-}
-.m-0-extra-large {
-  margin: 0 100rpx;
+.m-r-0 {
+  margin-right: 0 !important;
 }
 
 .p-0 {
   padding: 0 !important;
 }
-.p-t-0 {
-  padding-top: 0 !important;
+.p-extra-small {
+  padding: 8rpx;
 }
-.p-b-0 {
-  padding-bottom: 0 !important;
+.p-small {
+  padding: 16rpx;
 }
-.p-l-0 {
-  padding-left: 0 !important;
+.p-base {
+  padding: 28rpx;
 }
-.p-r-0 {
-  padding-right: 0 !important;
+.p-medium {
+  padding: 40rpx;
+}
+.p-large {
+  padding: 60rpx;
+}
+.p-extra-large {
+  padding: 100rpx;
+}
+.p-extra-small-0 {
+  padding: 8rpx 0;
+}
+.p-0-extra-small {
+  padding: 0 8rpx;
+}
+.p-small-0 {
+  padding: 16rpx 0;
+}
+.p-0-small {
+  padding: 0 16rpx;
+}
+.p-base-0 {
+  padding: 28rpx 0;
+}
+.p-0-base {
+  padding: 0 28rpx;
+}
+.p-medium-0 {
+  padding: 40rpx 0;
+}
+.p-0-medium {
+  padding: 0 40rpx;
+}
+.p-large-0 {
+  padding: 60rpx 0;
+}
+.p-0-large {
+  padding: 0 60rpx;
+}
+.p-extra-large-0 {
+  padding: 100rpx 0;
+}
+.p-0-extra-large {
+  padding: 0 100rpx;
 }
 .p-t-extra-small {
   padding-top: 8rpx;
@@ -235,59 +277,17 @@
 .p-r-extra-large {
   padding-right: 100rpx;
 }
-.p-extra-small {
-  padding: 8rpx;
+.p-t-0 {
+  padding-top: 0 !important;
 }
-.p-small {
-  padding: 16rpx;
+.p-b-0 {
+  padding-bottom: 0 !important;
 }
-.p-base {
-  padding: 28rpx;
+.p-l-0 {
+  padding-left: 0 !important;
 }
-.p-medium {
-  padding: 40rpx;
-}
-.p-large {
-  padding: 60rpx;
-}
-.p-extra-large {
-  padding: 100rpx;
-}
-.p-extra-small-0 {
-  padding: 8rpx 0;
-}
-.p-0-extra-small {
-  padding: 0 8rpx;
-}
-.p-small-0 {
-  padding: 16rpx 0;
-}
-.p-0-small {
-  padding: 0 16rpx;
-}
-.p-base-0 {
-  padding: 28rpx 0;
-}
-.p-0-base {
-  padding: 0 28rpx;
-}
-.p-medium-0 {
-  padding: 40rpx 0;
-}
-.p-0-medium {
-  padding: 0 40rpx;
-}
-.p-large-0 {
-  padding: 60rpx 0;
-}
-.p-0-large {
-  padding: 0 60rpx;
-}
-.p-extra-large-0 {
-  padding: 100rpx 0;
-}
-.p-0-extra-large {
-  padding: 0 100rpx;
+.p-r-0 {
+  padding-right: 0 !important;
 }
 
 .m-t--1 {
@@ -485,28 +485,20 @@
   font-size: 44rpx;
 }
 
+.color-info {
+  color: #909399;
+}
 .color-primary {
   color: #409EFF;
 }
 .color-success {
   color: #67C23A;
 }
-.color-danger {
-  color: #F56C6C;
-}
 .color-warning {
   color: #E6A23C;
 }
-.color-info {
-  color: #909399;
-}
-
-.t-left {
-  text-align: left;
-}
-
-.t-right {
-  text-align: right;
+.color-danger {
+  color: #F56C6C;
 }
 
 .t-center {
@@ -515,6 +507,14 @@
 
 .t-justify {
   text-align: justify;
+}
+
+.t-left {
+  text-align: left;
+}
+
+.t-right {
+  text-align: right;
 }
 
 .t-ellipsis {
@@ -563,6 +563,22 @@
 
 .clickable:active {
   opacity: 0.8;
+}
+
+.bg-info {
+  background-color: #909399;
+}
+.bg-primary {
+  background-color: #409EFF;
+}
+.bg-success {
+  background-color: #67C23A;
+}
+.bg-warning {
+  background-color: #E6A23C;
+}
+.bg-danger {
+  background-color: #F56C6C;
 }
 
 /*# sourceMappingURL=common.wxss.map */

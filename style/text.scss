@@ -17,8 +17,8 @@ $fontNames: 'extra-small' 'small' 'base' 'medium' 'large' 'extra-large';
 
 // 字体颜色
 
-$colors: $primary $success $danger $warning $info;
-$colorNames: 'primary' 'success' 'danger' 'warning' 'info';
+$colors: $info $primary $success $warning $danger;
+$colorNames: 'info' 'primary' 'success' 'warning' 'danger';
 
 .color{
   @each $name in $colorNames {
@@ -32,20 +32,20 @@ $colorNames: 'primary' 'success' 'danger' 'warning' 'info';
 
 // 对齐方式
 
-.t-left {
-  text-align: left;
-}
-
-.t-right {
-  text-align: right;
-}
-
 .t-center {
   text-align: center;
 }
 
 .t-justify {
   text-align: justify;
+}
+
+.t-left {
+  text-align: left;
+}
+
+.t-right {
+  text-align: right;
 }
 
 // 溢出处理
