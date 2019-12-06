@@ -1,6 +1,6 @@
 {
   "name": "sx-common-css",
-  "version": "2.1.1",
+  "version": "2.2.1",
   "description": "",
   "main": "dist/common.css",
   "miniprogram": "wx-dist",
