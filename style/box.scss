@@ -29,7 +29,7 @@ $values: $extraSmall $small $base $medium $large $extraLarge;
   }
 }
 
-// xx-t-small... xx-t-b-small...
+// xx-t-small... xx-b-small...
 @mixin direction($propertyName) {
 
   $classNames: 't' 'b' 'l' 'r';
@@ -76,7 +76,7 @@ $array: 'margin' 'padding';
       #{$elem}: 0 !important;
     }
 
-    // m-x-x p-x-x
+    // m-x p-x
     @include box($elem, $names, $values);
 
     @each $name in $names {
