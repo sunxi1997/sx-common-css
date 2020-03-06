@@ -9,7 +9,7 @@
 
 // 背景颜色
 
-$colors: $info $primary $success $warning $danger;
+$colors: $colorInfo $colorPrimary $colorSuccess $colorWarning $colorDanger;
 $colorNames: 'info' 'primary' 'success' 'warning' 'danger';
 
 .bg{

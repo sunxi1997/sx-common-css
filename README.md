@@ -60,11 +60,11 @@ $shadow: 0 0 2px 1px rgba(0, 0, 0, 0.05);
 $extraShadow: 0 0 6px 1px rgba(0, 0, 0, 0.1);
 
 // 颜色
-$primary: #409EFF;
-$success: #67C23A;
-$danger: #F56C6C;
-$warning: #E6A23C;
-$info: #909399;
+$colorPrimary: #409EFF;
+$colorSuccess: #67C23A;
+$colorDanger: #F56C6C;
+$colorWarning: #E6A23C;
+$colorInfo: #909399;
 
 // 字体大小
 $fontExtraSmall: 12px;

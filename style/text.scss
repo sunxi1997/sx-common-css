@@ -17,7 +17,7 @@ $fontNames: 'extra-small' 'small' 'base' 'medium' 'large' 'extra-large';
 
 // 字体颜色
 
-$colors: $info $primary $success $warning $danger;
+$colors: $colorInfo $colorPrimary $colorSuccess $colorWarning $colorDanger;
 $colorNames: 'info' 'primary' 'success' 'warning' 'danger';
 
 .color{
