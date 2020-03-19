@@ -1,5 +1,4 @@
-
-@import "../variables/box.variables";
+@import "variables";
 
 // ---------------------------------
 // 元素尺寸
@@ -17,7 +16,8 @@
 // 边距
 // ---------------------------------
 $names: 'extra-small' 'small' 'base' 'medium' 'large' 'extra-large';
-$values: $extraSmall $small $base $medium $large $extraLarge;
+
+$values: $spacing-extra-small $spacing-small $spacing-base $spacing-medium $spacing-large $spacing-extra-large;
 
 @mixin box($property, $classNames, $values, $suffix: null) {
   @each $name in $classNames {
@@ -146,7 +146,7 @@ $array: 'margin' 'padding';
   transform: translate3d(-50%, -50%, 0)
 }
 
-.pos-x-center{
+.pos-x-center {
   left: 50%;
   transform: translate3d(-50%, 0, 0);
 }
@@ -189,26 +189,34 @@ $array: 'margin' 'padding';
 // 圆角
 // ---------------------------------
 
-.radius {
-  border-radius: $radius
+.radius, .radius-base {
+  border-radius: $radius-base
 }
 
-.radius-extra {
-  border-radius: $extraRadius
+.radius-small {
+  border-radius: $radius-small;
+}
+
+.radius-large {
+  border-radius: $radius-large
 }
 
 .radius-circle {
-  border-radius: 50%
+  border-radius: $radius-circle
 }
 
 // ---------------------------------
 // 阴影
 // ---------------------------------
 
-.shadow {
-  box-shadow: $shadow
+.shadow, .shadow-base {
+  box-shadow: $shadow-base
+}
+
+.shadow-small {
+  box-shadow: $shadow-small
 }
 
 .shadow-extra {
-  box-shadow: $extraShadow
+  box-shadow: $shadow-large
 }

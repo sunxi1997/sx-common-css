@@ -1,9 +1,6 @@
-@import "variables/index";
+@import "style/variables";
 
-// body 增加权值
-body {
-  @import "style/box";
-  @import "style/flex";
-  @import "style/text";
-  @import "style/style";
-}
+@import "style/box";
+@import "style/flex";
+@import "style/text";
+@import "style/style";

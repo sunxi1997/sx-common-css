@@ -1,0 +1,23 @@
+// 颜色
+@mixin colors($colors, $colorNames) {
+  @each $name in $colorNames {
+    $i: index($colorNames, $name);
+    $color: nth($colors, $i);
+
+    .color-#{$name} {
+      color: $color;
+    }
+
+    .bg-#{$name} {
+      background-color: $color;
+    }
+  }
+}
+
+// 弹性布局-居中布局
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center
+}

@@ -1,23 +1,10 @@
+@import "variables";
 
-@import "../variables/color";
+.clickable {
+  cursor: pointer;
 
-.clickable{
-  &:active{
+  &:active {
     opacity: 0.8;
   }
 }
 
-// 背景颜色
-
-$colors: $colorInfo $colorPrimary $colorSuccess $colorWarning $colorDanger;
-$colorNames: 'info' 'primary' 'success' 'warning' 'danger';
-
-.bg{
-  @each $name in $colorNames {
-    $i: index($colorNames, $name);
-    $color: nth($colors, $i);
-    &-#{$name} {
-      background-color: $color;
-    }
-  }
-}
